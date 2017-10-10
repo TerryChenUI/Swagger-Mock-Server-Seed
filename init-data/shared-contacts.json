@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "name": "test-name-1",
+    "organizationalUnit": "test-ou-1"
+  },
+  {
+    "id": "2",
+    "name": "test-name-2",
+    "organizationalUnit": "test-ou-2"
+  },
+  {
+    "id": "3",
+    "name": "test-name-3",
+    "organizationalUnit": "test-ou-3"
+  }
+]

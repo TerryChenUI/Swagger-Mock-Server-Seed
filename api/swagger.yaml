@@ -1,0 +1,149 @@
+swagger: '2.0'
+info:
+  title: Swagger
+  description: 'API Document'
+  version: 1.0.0
+host: localhost
+basePath: /api/v1
+schemes:
+  - https
+paths:
+  /sharedcontacts:
+    get:
+      description: Get all shared contacts
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/SharedContact'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not found
+        '500':
+          description: Internal server error
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: false
+          schema:
+            $ref: '#/definitions/SharedContact'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SharedContact'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not found
+        '500':
+          description: Internal server error
+  '/sharedcontacts/{id}':
+    get:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SharedContact'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not found
+        '500':
+          description: Internal server error
+    put:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: false
+          schema:
+            $ref: '#/definitions/SharedContact'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/SharedContact'
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not found
+        '500':
+          description: Internal server error
+    delete:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not found
+        '500':
+          description: Internal server error
+definitions:
+  SharedContact:
+    required:
+      - name
+      - organizationalUnit
+    type: object
+    properties:
+      id:
+        required: false
+        type: string
+        description: Identity of the shared contact
+      name:
+        required: true
+        type: string
+        description: Name of the shared contact
+      organizationalUnit:
+        required: true
+        type: string
+        description: Organizational Unit of the shared contact
