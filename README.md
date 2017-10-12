@@ -155,9 +155,6 @@ module.exports = (app) => {
 
 ## Swagger 相关参考
 * [Swagger 主页](https://swagger.io/)
-* [Swagger从入门到精通](https://www.gitbook.com/book/huangwenchao/swagger/details)
-
-开发过程中，如果我们使用Swagger编写API文档，
-
+* [Swagger 从入门到精通](https://www.gitbook.com/book/huangwenchao/swagger/details)
 
 
