@@ -128,6 +128,25 @@ paths:
           description: Not found
         '500':
           description: Internal server error
+  /sharedcomputers:
+      get:
+        description: Get all shared computers
+        consumes:
+          - application/json
+        produces:
+          - application/json
+        parameters: []
+        responses:
+          '200':
+            description: Success
+          '400':
+            description: Bad Request
+          '401':
+            description: Unauthorized
+          '404':
+            description: Not found
+          '500':
+            description: Internal server error
 definitions:
   SharedContact:
     required:

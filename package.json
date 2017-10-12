@@ -1,5 +1,5 @@
 {
-  "name": "swagger-mock-server",
+  "name": "swagger-mock-server-seed",
   "version": "0.0.1",
   "description": "curd mock server by using swagger specifications",
   "main": "index.js",

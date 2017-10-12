@@ -1,5 +1,5 @@
 /**
- * Config tables
+ * Tables
  * name: api/v1/{name}
  * key:  api/v1/{name}/{key} | optional
  * data: array or string

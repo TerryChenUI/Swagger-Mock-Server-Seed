@@ -1,6 +1,13 @@
 /**
- * Custom api config in here
+ * Custom api
  */
-module.exports = (app) => {  
-    app.use('/api/v2', require('./shared-contacts.js'));
+
+const config = require('../config');
+
+module.exports = (app) => {
+    // overload swagger api definition
+    app.use(`${config.prefixApi}/sharedcomputers`, require('./shared-computers'));
+
+    // other api definition
+    app.use('/api/v2/settings', require('./settings'));
 };
