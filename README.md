@@ -6,7 +6,7 @@
 对于前端开发人员，需要通过发送Http请求来操作数据，但此时后端人员并没有完成相关接口的开发，所以我们可以配置 mock server 来处理数据的回调。
 
 
-## swagger-express-middleware:
+## swagger-express-middleware
 目前的团队使用 swaager 协议编写 API 文档，通常我们配置 mock server，使用 express 服务器，对照 API 文档写对应的接口。例如
 
 **swagger api 文档：**
@@ -71,7 +71,7 @@ app.get('/api/v1/sharedcontacts', (req, res, next) => {
 
 更多介绍和使用请参考[swagger-express-middleware](https://github.com/BigstickCarpet/swagger-express-middleware) 
 
-## swagger-mock-server-seed
+## swagger-mock-server-seed 脚手架
 swagger-mock-server-seed 是根据 swagger-express-middleware 框架创建的脚手架。
 
 ### 安装教程 ###
