@@ -1,4 +1,4 @@
-# swagger-mock-server-seed
+# Swagger-Mock-Server-Seed
 
 ## 前后端分离模式
 现在大部分团队都采用前后端分离的开发模式中，那么在做 feature 开发前，前端和后端需要协同定义 Restful API 接口的数据格式，就可以各自开干了。
